@@ -3,10 +3,12 @@ import {Images} from "../App";
 import {Box} from "@mui/material";
 
 export function BeforeAfter(props: Images) {
-    return <Box height="70vh" sx={{
+    return <Box height="70vh" p={1} sx={{
         "img": {
-            height: "90vh"
-        }
+            height: "90vh",
+            borderRadius: "15px"
+        },
+
     }}>
         <ReactBeforeSliderComponent
             firstImage={{imageUrl: props.before}}
